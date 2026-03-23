@@ -1,0 +1,12 @@
+inputs:
+  wind_file: ../examples/example_wind.csv
+  solar_file: ../examples/example_solar.csv
+  demand_file: ../examples/example_demand.csv
+  grid_file: ../examples/example_grid.csv
+clustering:
+  n_space: 6
+  n_time: 8
+weights: {}
+outputs:
+  directory: ../output/example_run
+  format: csv

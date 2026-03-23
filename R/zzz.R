@@ -1,0 +1,18 @@
+utils::globalVariables(c(
+  ".data",
+  "cluster_label",
+  "correlation",
+  "duration_rank",
+  "feature_x",
+  "feature_y",
+  "hour_of_day",
+  "month",
+  "n_hours",
+  "temporal_cluster",
+  "value",
+  "weight_hours",
+  "x",
+  "xend",
+  "y",
+  "yend"
+))

@@ -1,0 +1,19 @@
+Package: mick
+Type: Package
+Title: Mosaic Intelligent Clustering Kernel
+Version: 0.1.0
+Author: Iain Staffell
+Maintainer: Iain Staffell <i.staffell@imperial.ac.uk>
+Description: Reduces high-resolution hourly and spatial energy-system inputs
+    into smaller representative models while preserving clustering assignments,
+    reduced series, and run metadata.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: ggplot2, jsonlite, stats, tools, utils, yaml
+Suggests: igraph, sf, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2026-03-23 15:57:49 UTC; Iain Staffell
