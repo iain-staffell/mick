@@ -6,7 +6,7 @@
     "grid_file": "../examples/example_grid.csv"
   },
   "clustering": {
-    "n_space": 5,
+    "n_space": 6,
     "n_time": 12
   },
   "weights": {},

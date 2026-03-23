@@ -91,7 +91,7 @@ mick_example_files <- function(directory = tempfile("mick-example-"), format = c
       grid_file = file.path(inputs_dir, "example_grid.csv")
     ),
     clustering = list(
-      n_space = 5L,
+      n_space = 6L,
       n_time = 12L
     ),
     weights = list(),

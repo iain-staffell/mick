@@ -15,7 +15,7 @@ remotes::install_github("iain-staffell/mick")
 library(mick)
 ```
 
-Run a minimal example for Great Britain, reducing 8760 hours of data for 14 zones down to 12 time slices for 5 zones.
+Run a minimal example for Great Britain, reducing 8760 hours of data for 14 zones down to 12 time slices for 6 zones.
 This example gives you a local copy of the files that MICK works with (so you can see the example format), and saves the output to disk.
 
 ```r
@@ -37,11 +37,12 @@ One approach is to view the distribution of your variables in the original and c
 # by default, show the duration curve for each variable, summed over all zone:
 plot_temporal_duration_curves(result)
 
+# or look at one variable across all zones
+plot_temporal_duration_curves(result, var="net_demand")
+
 # you can look at individual zones (e.g. southern scotland)
 plot_temporal_duration_curves(result, node="N")
 
-# or look at one variable across all zones
-plot_temporal_duration_curves(result, var="net_demand")
 ```
 
 Another approach is to see how the zones were clustered together:
