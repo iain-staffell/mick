@@ -4,8 +4,8 @@ inputs:
   demand_file: ../examples/example_demand.csv
   grid_file: ../examples/example_grid.csv
 clustering:
-  n_space: 6
-  n_time: 8
+  n_space: 5
+  n_time: 12
 weights: {}
 outputs:
   directory: ../output/example_run

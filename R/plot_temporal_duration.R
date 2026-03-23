@@ -1,5 +1,5 @@
 .mick_duration_series_names <- c("demand", "wind", "solar", "net_demand")
-.mick_duration_yearlike_timesteps <- c(8760L, 8786L)
+.mick_duration_yearlike_timesteps <- c(8760L, 8785L)
 
 .mick_duration_use_year_ticks <- function(n_timesteps) {
   if (!is.numeric(n_timesteps) || length(n_timesteps) != 1L || is.na(n_timesteps)) {

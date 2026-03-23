@@ -50,8 +50,8 @@ test_that("validated list configs accept integer scalars", {
       grid_file = example_data_path("example_grid.csv")
     ),
     clustering = list(
-      n_space = 6L,
-      n_time = 8L
+      n_space = 5L,
+      n_time = 12L
     ),
     outputs = list(
       directory = "out",
@@ -71,8 +71,8 @@ test_that("validated list configs allow empty reserved_time_slices", {
       grid_file = example_data_path("example_grid.csv")
     ),
     clustering = list(
-      n_space = 6L,
-      n_time = 8L,
+      n_space = 5L,
+      n_time = 12L,
       reserved_time_slices = character(0)
     ),
     outputs = list(
@@ -118,8 +118,8 @@ test_that("file-backed configs accept empty reserved_time_slices", {
       grid_file = "../examples/example_grid.csv"
     ),
     clustering = list(
-      n_space = 6L,
-      n_time = 8L,
+      n_space = 5L,
+      n_time = 12L,
       reserved_time_slices = list()
     ),
     outputs = list(
@@ -163,8 +163,8 @@ test_that("wrong-type top-level sections are reported as section errors", {
   bad <- list(
     inputs = "oops",
     clustering = list(
-      n_space = 6L,
-      n_time = 8L
+      n_space = 5L,
+      n_time = 12L
     ),
     weights = 123,
     outputs = list(
@@ -210,8 +210,8 @@ test_that("validate_config rejects unsupported temporal and reserved slice value
       grid_file = example_data_path("example_grid.csv")
     ),
     clustering = list(
-      n_space = 6L,
-      n_time = 8L,
+      n_space = 5L,
+      n_time = 12L,
       temporal_method = "bogus",
       reserved_time_slices = c("max_net_demand", "bogus_rule")
     ),
@@ -254,8 +254,8 @@ test_that("validate_config aggregates missing input files after resolution", {
       grid_file = "../missing_grid.csv"
     ),
     clustering = list(
-      n_space = 6L,
-      n_time = 8L
+      n_space = 5L,
+      n_time = 12L
     ),
     outputs = list(
       directory = "../output/example_run",
